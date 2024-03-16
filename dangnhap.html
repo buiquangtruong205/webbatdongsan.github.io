@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng nhập</title>
+</head>
+<body>
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f08511;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.content {
+  margin: 50px auto;
+  padding: 20px;
+  max-width: 400px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"],
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #1319ad;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button {
+  background-color: #eee;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+    </style>
+  <header>
+    <h1>Đăng nhập vào website</h1>
+    <a href="trangchu.html">Quay lại</a>
+  </header>
+  <div class="content">
+    <form>
+      <label for="email_phone">Số điện thoại hoặc Email:</label>
+      <input type="text" id="email_phone" name="email_phone" required>
+      <label for="password">Mật khẩu:</label>
+      <input type="password" id="password" name="password" required>
+      <button type="button" id="forgot_password">Quên mật khẩu?</button>
+      <input type="submit" value="Đăng nhập">
+      <button type="button" id="register">Đăng kí</button>
+    </form>
+  </div>
+</body>
+</html>
